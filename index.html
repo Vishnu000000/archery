@@ -550,10 +550,13 @@
                                                 document.getElementById("title").innerHTML = "Your Score<br>" + totalScore;
                                                 bestScore = 268;
                                                 if (bestScore < totalScore) {
-                                                    bestScore = totalScore;
+                                                    var namevis = prompt("Your score is new Highest, please enter your name");
+                                                    bestScore = totalScore + " by " + namevis + "<br>Please take screenshot and send to K Vishnu to edit Your name as New Highest😎";
                                                     try {
                                                         highScoreSound.play().catch(function(e) {});
                                                     } catch (err) {}
+                                                } else {
+                                                    bestScore = 268 + " by Pritam";
                                                 }
                                                 document.getElementById("score").innerHTML = 0;
                                                 document.getElementById("best").innerHTML = bestScore;
