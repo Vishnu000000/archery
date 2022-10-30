@@ -548,7 +548,8 @@
                                                 document.body.removeEventListener("keydown", shoot);
                                                 startPage.style.display = "block";
                                                 document.getElementById("title").innerHTML = "Your Score<br>" + totalScore;
-                                                if (bestScore < totalScore) {
+                                                bestScore = 208;
+                                                if (208 < totalScore) {
                                                     bestScore = totalScore;
                                                     try {
                                                         highScoreSound.play().catch(function(e) {});
