@@ -557,6 +557,16 @@
                                                 }
                                                 document.getElementById("score").innerHTML = 0;
                                                 document.getElementById("best").innerHTML = bestScore;
+                                                if (totalScore < 10) {
+                                                    alert("Well Played🎯");
+                                                } else if (totalScore >= 10 && totalScore < 80) {
+                                                    alert("Your Arrow is sure as Lord Ram🏹🎯");
+                                                } else if (totalScore >= 80 && totalScore < 160) {
+                                                    alert("Your Majesty, The Great Archer of Our Time.\nYou are Selected as The great Archer by Vishnu🤩🎯");
+                                                } else if (totalScore >= 160 && totalScore < 200) {
+                                                    alert("JUST WOW, Please share your Score with Vishnu vardhan😎🎯");
+                                                }
+
                                             }
 
                                         } else {
