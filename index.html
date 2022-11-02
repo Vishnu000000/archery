@@ -177,13 +177,12 @@
 
 <body>
     <script>
-        //Created By : Unknown
-        //Developed by : Iamkvv
+        //Created and Developed by : Iamkvv
 
         window.onload = function() {
 
             alert("Hi There. I am Vishnu Vardhan K, One of em, Who Survived the War\n\nOur King Shivaji was killed by Aurangazeb\n\nWe have to take revenge on him\n\nI want to see your Archery Skills\n\nLet's play✅");
-            alert("Please play in Horizental Mode, Tap 1 time for releasing arrows, More Accuracy for More Points. BEST OF LUCK🤞🏼")
+            alert("Please play in Horizental Mode, Tap 1 time for releasing arrows, Hit +7 and +8 for a bonus Arrow, More Accuracy for More Points. BEST OF LUCK🤞🏼")
             String.prototype.repeat = String.prototype.repeat ||
                 function(c) {
                     var r = '';
@@ -251,7 +250,7 @@
                 function countTime() {
                     var container = document.getElementById("timerDiv");
                     container.innerHTML = "<div class='timer'></div>";
-                    countTimeOut = setTimeout(shoot, 5500);
+                    countTimeOut = setTimeout(shoot, 4000);
                 }
                 countTime();
 
@@ -548,15 +547,17 @@
                                                 document.body.removeEventListener("keydown", shoot);
                                                 startPage.style.display = "block";
                                                 document.getElementById("title").innerHTML = "Your Score<br>" + totalScore;
-                                                bestScore = 298;
-                                                if (bestScore < totalScore) {
-                                                    var namevis = prompt("Your score is new Highest, please enter your name");
-                                                    bestScore = totalScore + " by " + namevis + "<br>Please take screenshot and send to K Vishnu to edit Your name as New Highest😎";
+                                                bestScore = 150;
+                                                if (bestScore < totalScore && totalScore < 482) {
+                                                    var namevis = prompt("Your deemed as finest players, Kindly Enter your name🤞🏼😎");
+                                                    bestScore = totalScore + " by " + namevis + "<br>Please take screenshot and Share your happiness with Us😎";
                                                     try {
                                                         highScoreSound.play().catch(function(e) {});
                                                     } catch (err) {}
-                                                } else {
-                                                    bestScore = 460 + " by Kowshik🔥";
+                                                } else if (totalScore > 482) {
+                                                    alert("You broke the Highest record of all time🤩🤩");
+                                                    var theGreat = prompt("Your Majesty, The Greatest of all. Kindly Enter your name😎");
+                                                    bestScore = totalScore + " by " + theGreat + "🔥";
                                                 }
                                                 document.getElementById("score").innerHTML = 0;
                                                 document.getElementById("best").innerHTML = bestScore;
@@ -698,9 +699,9 @@
         <div id="startMenu">
             <h1 id="title"><span style="font-size:60px">A</span>RCHERY<br><span style="font-size:60px">G</span>AME</h1>
             <button>TAP TO START</button>
-            <h2><span id="best">460 by Kowshik🔥</span><br>Best</h2>
+            <h2><span id="best">482 by Chakradhar🔥</span><br>Best</h2>
             <p style="font-size:30px;">The Kvv's Instagram<br><br>➡️<a class="insta" href="https://www.instagram.com/thee_kvv" target="_blank" style="text-align: center;font-size:35px">Instagram</a>⬅️</p><br><br>
-            <p style="font-size:30px;">Kowshik's Facebook<br><br>➡️<a class="insta" href="https://www.facebook.com/kowshik.devarapalli.3" target="_blank" style="text-align: center;font-size:35px">Facebook</a>⬅️</p>
+            <p style="font-size:30px;">Chakradhar's Instagram<br><br>➡️<a class="insta" href="https://www.instagram.com/thee_kvv" target="_blank" style="text-align: center;font-size:35px">Instagram</a>⬅️</p>
             <br><br><br><br>
             <marquee style="color:rgb(100, 0, 213);font-size: 25px;">Only Contact our Social mail for ad promotions</marquee>
         </div>
