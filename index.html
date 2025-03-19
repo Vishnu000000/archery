@@ -157,21 +157,37 @@
             }
         }
         
-        .insta:link {
-            color: blue;
-        }
-        
-        .insta:visited {
-            color: blue;
-        }
-        
-        .insta:hover {
-            color: blue;
-        }
-        
-        .insta:active {
-            color: blue;
-        }
+.linker {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.linker:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.linker:active {
+    background-color: #00408d;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linker:visited {
+    color: white;
+}
+
     </style>
 </head>
 
@@ -181,8 +197,8 @@
 
         window.onload = function() {
 
-            alert("Hi There. I am Vishnu Vardhan K, One of em, Who Survived the War\n\nOur King Shivaji was killed by Aurangazeb\n\nWe have to take revenge on him\n\nI want to see your Archery Skills\n\nLet's play✅");
-            alert("Please play in Horizental Mode, Tap 1 time for releasing arrows, Hit +7 and +8 for a bonus Arrow, More Accuracy for More Points. BEST OF LUCK🤞🏼");
+            alert("Hi There. I am Vishnu, One of us, Who Survived the War\n\nOur King Chatrapathi Sambhaji was killed by Aurangazeb\n\nWe have to take revenge on him\n\nI want to see your Archery Skills\n\nLet's play✅");
+            alert("Please play in Horizental Mode, Tap 1 time for releasing arrows, Hit +7 and +8 for a bonus Arrow, More Accuracy for More Points. Enjoy");
             String.prototype.repeat = String.prototype.repeat ||
                 function(c) {
                     var r = '';
@@ -699,10 +715,13 @@
         <div id="startMenu">
             <h1 id="title"><span style="font-size:60px">A</span>RCHERY<br><span style="font-size:60px">G</span>AME</h1>
             <button>TAP TO START</button>
-            <h2><span id="best">742 by Deeksha🔥</span><br>Best</h2>
-            <p style="font-size:30px;">Contact Dev<br><br><a class="insta" href="https://www.instagram.com/im_kvv" target="_blank" style="text-align: center;font-size:35px">Instagram</a></p><br>
+            <h2><span id="best">742 by Anonymous</span><br>Best</h2>
+            <p style="font-size:30px;">Contact Developer<br><br><a class="linker" href="https://www.linkedin.com/in/vishnu-vardhan-kilaparthi/" target="_blank" style="text-align: center;font-size:35px">Linkedin</a></p><br>
+            
+             <p style="font-size:30px;"><a class="linker" href="https://www.instagram.com/vishnu.kilaparthi" target="_blank" style="text-align: center;font-size:35px">Instagram</a></p><br>
+           
             <br><br><br><br>
-            <marquee style="color:rgb(100, 0, 213);font-size: 25px;">Only Contact our Social platform for Better Ideas or ad promotions</marquee>
+            <marquee style="color:rgb(100, 0, 213);font-size: 25px;">Contact me for any suggestions</marquee>
         </div>
 
     </div>
